@@ -4,8 +4,8 @@ const request = require('request');
 
 const movieId = process.argv[2];
 const filmEndpoint = 'https://swapi-api.hbtn.io/api/films/' + movieId;
-let people = []
-const names = []
+let people = [];
+const names = [];
 
 const requestCharacters = async () => {
   await new Promise(resolve => request(filmEndpoint, (err, res, body) => {
