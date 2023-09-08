@@ -60,7 +60,7 @@ def isPrime(n):
         # Not prime if divisible by another number less
         # or equal to the square root of itself.
         # n**(1/2) returns square root of n
-        for i in range(3, int(n**(1/2))+1, 2):
+        for i in range(3, int(n**(1/2)) + 1, 2):
             if n % i == 0:
                 return "Not prime"
         return True
