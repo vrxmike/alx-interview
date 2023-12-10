@@ -63,4 +63,4 @@ def isPrime(n):
         for i in range(3, int(n**(1/2))+1, 2):
             if n % i == 0:
                 return "Not prime"
-            return True
+        return True
