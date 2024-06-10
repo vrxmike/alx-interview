@@ -21,10 +21,10 @@ def canUnlockAll(boxes):
             if key != 0 and key < length and key not in opened_boxes:
                 i = key
                 break
-            if oldi != i:
-                continue
-            else:
-                break
+        if oldi != i:
+            continue
+        else:
+            break
 
     for i in range(length):
         if i not in opened_boxes and i != 0:
